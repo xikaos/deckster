@@ -1,6 +1,6 @@
 require "typhoeus"
 require "nokogiri"
-require "bigdecimal"
+require "pry"
 require "./lib/card"
 require "./lib/shop"
 
@@ -9,12 +9,14 @@ def setup txt_path
   @shops = []
 end
 
+setup "cards.txt"
+binding.pry
+puts "I #{"<3".red} YOU!"
 
 
 
 
-
-# c1 = Card.new "Grasp of Darknes"
+# c1 = Card.new "Grasp of Darkness"
 # c2 = Card.new "Hearless Summoning"
 # c3 = Card.new "Chaos Warp"
 #
