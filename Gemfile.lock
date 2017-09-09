@@ -1,0 +1,44 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.8.0)
+    bigdecimal (1.3.2)
+    byebug (9.1.0)
+    coderay (1.1.2)
+    ethon (0.10.1)
+      ffi (>= 1.3.0)
+    ffi (1.9.18)
+    method_source (0.8.2)
+    mini_portile2 (2.2.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.5.0)
+      byebug (~> 9.1)
+      pry (~> 0.10)
+    pry-meta (0.0.10)
+      awesome_print
+      pry
+      pry-byebug
+      pry-remote
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    slop (3.6.0)
+    typhoeus (1.3.0)
+      ethon (>= 0.9.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bigdecimal!
+  nokogiri!
+  pry-meta!
+  typhoeus!
+
+BUNDLED WITH
+   1.15.4
