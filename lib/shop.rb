@@ -13,4 +13,8 @@ class Shop
   def all
     self.cards.map{|card| card.name }
   end
+
+  def self.all
+    ObjectSpace.each_object(self).to_a
+  end
 end
