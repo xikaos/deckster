@@ -34,12 +34,13 @@ hydra = Typhoeus::Hydra.hydra
         card.price = prices[index].children[4].inner_text.strip
       end
 
-      unless Shop.all.map{|s| s.name }.include?(shop_name)
+      if existing_shop = @shops.find{|shop| shop.name == shop_name }
+        shop = existing_shop
+      else
         shop = Shop.new(shop_name)
+        shop.add(card)
+        @shops << Shop.new(shop)
       end
-
-      shop.add(card)
-      @shops << Shop.new(shop)
     end
   end
   hydra.queue(request)
