@@ -2,8 +2,8 @@ class Shop
   attr_accessor :name, :cards
 
   def initialize name
-    self.name = name
-    self.cards = []
+    @name = name
+    @cards = []
   end
 
   def add card
